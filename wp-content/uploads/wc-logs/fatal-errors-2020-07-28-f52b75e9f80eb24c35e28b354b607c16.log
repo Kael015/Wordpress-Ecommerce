@@ -1,0 +1,10 @@
+2020-07-28T11:32:12+00:00 CRITICAL require(): Failed opening required '' (include_path='C:\xampp\php\PEAR') di C:\xampp\htdocs\omahhijab\wp-content\plugins\jetpack\vendor\class-autoloader-handler.php pada baris 87
+
+2020-07-28T11:37:14+00:00 CRITICAL require(): Failed opening required '' (include_path='C:\xampp\php\PEAR') di C:\xampp\htdocs\omahhijab\wp-content\plugins\jetpack\vendor\class-autoloader-handler.php pada baris 87
+
+2020-07-28T11:38:05+00:00 CRITICAL require(): Failed opening required '' (include_path='C:\xampp\php\PEAR') di C:\xampp\htdocs\omahhijab\wp-content\plugins\jetpack\vendor\class-autoloader-handler.php pada baris 87
+
+2020-07-28T11:38:12+00:00 CRITICAL require(): Failed opening required '' (include_path='C:\xampp\php\PEAR') di C:\xampp\htdocs\omahhijab\wp-content\plugins\jetpack\vendor\class-autoloader-handler.php pada baris 87
+
+2020-07-28T11:38:19+00:00 CRITICAL require(): Failed opening required '' (include_path='C:\xampp\php\PEAR') di C:\xampp\htdocs\omahhijab\wp-content\plugins\jetpack\vendor\class-autoloader-handler.php pada baris 87
+

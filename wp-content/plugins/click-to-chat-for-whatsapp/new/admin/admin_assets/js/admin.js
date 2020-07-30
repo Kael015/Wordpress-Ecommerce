@@ -1,0 +1,89 @@
+// Click to Chat
+document.addEventListener('DOMContentLoaded', function() {
+
+    var elems = document.querySelectorAll('select');
+    M.FormSelect.init(elems, {});
+
+    var elems = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(elems, {});
+
+    var elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems, {});
+
+    var elems = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(elems, {});
+
+});
+
+
+jQuery(document).ready(function ($) {
+
+    $('select').formSelect();
+    $('.collapsible').collapsible();
+    $('.modal').modal();
+    $('.tooltipped').tooltip();
+    
+    $('.ht-ctc-color').wpColorPicker();
+
+    // ##### show/Hide #####
+  
+   //  show_hide option - other settings page
+   var ctc_show_hide_display = document.querySelectorAll('.ctc_show_hide_display');
+
+   // var hidebased = document.querySelector('.hidebased');
+   var hidebased = document.querySelectorAll('.hidebased');
+   var showbased = document.querySelectorAll('.showbased');
+   
+   // default display
+   function ctc_show_hide_default_display() {
+  
+       var val = $('.select_show_or_hide').find(":selected").val();
+
+       if (val == 'show') {
+           // showbased.classList.add('show-hide_display-block');
+           showbased.forEach(function (e) {
+               e.classList.add('show-hide_display-block');
+           });
+       } else if (val == 'hide') {
+           // hidebased.classList.add('show-hide_display-block');
+           hidebased.forEach(function (e) {
+               e.classList.add('show-hide_display-block');
+           });
+       } 
+   };
+   
+   ctc_show_hide_default_display();
+
+
+   //  incase display-block is added remove it .. onchange
+   function ctc_show_hide_display_remove() {
+       ctc_show_hide_display.forEach(function (e) {
+           e.classList.remove('show-hide_display-block');
+       });
+   };
+
+
+    $(".select_show_or_hide").on("change", function (e) {
+       // var x = e.target;
+       var val = e.target.value;
+   
+       if (val == 'show') {
+           ctc_show_hide_display_remove();
+           // showbased.classList.add('show-hide_display-block');
+           showbased.forEach(function (e) {
+               e.classList.add('show-hide_display-block');
+           });
+       } else if (val == 'hide') {
+           ctc_show_hide_display_remove();
+
+           //   hidebased.classList.add('show-hide_display-block');
+           hidebased.forEach(function (e) {
+               e.classList.add('show-hide_display-block');
+           });
+       } 
+     });
+
+    // ##### END #### show/Hide #####
+     
+
+});
